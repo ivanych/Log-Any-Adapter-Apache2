@@ -1,6 +1,9 @@
 name = "Log-Any-Adapter-Apache2"
-# badges = ["travis"]
 authority="cpan:IVANYCH"
-
+license="perl_5"
 module_maker="ModuleBuildTiny"
+badges = ["travis", "metacpan"]
 
+[FileGatherer]
+include_dotfiles = true
+exclude_match = ['^\.(?!perlcriticrc|perltidyrc)']
