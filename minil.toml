@@ -1,0 +1,6 @@
+name = "Log-Any-Adapter-Apache2"
+# badges = ["travis"]
+authority="cpan:IVANYCH"
+
+module_maker="ModuleBuildTiny"
+
