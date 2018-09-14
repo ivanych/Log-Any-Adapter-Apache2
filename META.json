@@ -47,11 +47,23 @@
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.98"
+            "Test::Perl::Critic" : "0",
+            "Test::PerlTidy" : "0"
          }
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/ivanych/Log-Any-Adapter-Apache2/issues"
+      },
+      "homepage" : "https://github.com/ivanych/Log-Any-Adapter-Apache2",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/ivanych/Log-Any-Adapter-Apache2.git",
+         "web" : "https://github.com/ivanych/Log-Any-Adapter-Apache2"
+      }
+   },
    "version" : "0.01",
    "x_authority" : "cpan:IVANYCH",
    "x_serialization_backend" : "JSON::PP version 2.27300"

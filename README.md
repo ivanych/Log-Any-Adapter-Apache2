@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ivanych/Log-Any-Adapter-Apache2.svg?branch=master)](https://travis-ci.org/ivanych/Log-Any-Adapter-Apache2) [![MetaCPAN Release](https://badge.fury.io/pl/Log-Any-Adapter-Apache2.svg)](https://metacpan.org/release/Log-Any-Adapter-Apache2)
 # NAME
 
 Log::Any::Adapter::Apache2 - It's new $module
