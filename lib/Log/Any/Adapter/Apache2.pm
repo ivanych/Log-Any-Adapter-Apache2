@@ -21,6 +21,8 @@ sub init {
     $self->{log_level} //= $s->loglevel;
 
     $self->{log_level} //= Log::Any::Adapter::Util::numeric_level('trace');
+
+    return;
 }
 
 foreach my $method ( Log::Any::Adapter::Util::logging_methods() ) {
