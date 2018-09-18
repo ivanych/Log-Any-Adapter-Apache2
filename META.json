@@ -1,16 +1,16 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Log::Any adapter for Apache2::Log",
    "author" : [
       "Mikhail Ivanov <m.ivanych@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v3.0.16, CPAN::Meta::Converter version 2.150005",
+   "generated_by" : "Minilla/v3.0.17, CPAN::Meta::Converter version 2.150010",
    "license" : [
       "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "version" : 2
    },
    "name" : "Log-Any-Adapter-Apache2",
    "no_index" : {
@@ -42,6 +42,8 @@
       },
       "runtime" : {
          "requires" : {
+            "Log::Any" : "0",
+            "mod_perl2" : "0",
             "perl" : "5.008001"
          }
       },
@@ -66,5 +68,5 @@
    },
    "version" : "0.01",
    "x_authority" : "cpan:IVANYCH",
-   "x_serialization_backend" : "JSON::PP version 2.27300"
+   "x_serialization_backend" : "JSON::PP version 2.97001"
 }
