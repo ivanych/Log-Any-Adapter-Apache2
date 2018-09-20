@@ -17,9 +17,7 @@ sub init {
     my $r = Apache2::RequestUtil->request;
     my $s = $r->server;
 
-    $self->{logger}    //= $r->log;
     $self->{log_level} //= $s->loglevel;
-
     $self->{log_level} //= Log::Any::Adapter::Util::numeric_level('trace');
 
     return;
@@ -33,7 +31,7 @@ foreach my $method ( Log::Any::Adapter::Util::logging_methods() ) {
         sub {
             my $self = shift;
 
-            return $self->{logger}->$apache2_method(@_);
+            return Apache2::RequestUtil->request->log->$apache2_method(@_);
         }
     );
 }
